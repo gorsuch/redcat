@@ -1,6 +1,6 @@
 # Redcat
 
-TODO: Write a gem description
+Cat a file (or `stdin`) to a Redis list.
 
 ## Installation
 
@@ -18,7 +18,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```bash
+# send a file to a list
+$ redcat -l somelist somefile.txt
+
+# pipe a stream to a list
+$ tail -f /var/log/messages | redcat -l logs
+```
 
 ## Contributing
 
