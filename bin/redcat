@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+$:<< './lib'
+require 'redcat'
+
+Redcat::CLI.new.run
